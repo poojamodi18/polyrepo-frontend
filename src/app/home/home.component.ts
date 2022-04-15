@@ -13,6 +13,12 @@ import {Router} from "@angular/router";
 export class HomeComponent implements OnInit {
 
   name:any;
+  authToken: any;
+  orgProfileData: any;
+  orgLogin: any;
+  repoNameList: any;
+  item:any;
+  filters: string[] = ['Issue Analysis', 'PR Analysis'];
 
   constructor(private http: HttpClient, private securityService: SecurityService,
     private router: Router) { }

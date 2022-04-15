@@ -7,10 +7,10 @@ import {CallbackComponent} from "./callback/callback.component";
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent, canActivate: [AuthGuard]},
   {path: 'login', component: LoginComponent},
-  {path: 'callback', component: CallbackComponent}
+  {path: 'callback', component: CallbackComponent},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
 ];
 
 @NgModule({
